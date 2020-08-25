@@ -1,4 +1,4 @@
-# Pools #
+# Polls 
 
 > :computer: A public site that lets people view polls and vote in them. [Django Documentation](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 
@@ -10,14 +10,14 @@ This project was developed with the following technologies:
 - [PyCharm](https://www.jetbrains.com/pt-br/pycharm/download/#section=windows) 
 - [SQLite](https://www.sqlite.org/docs.html)
 
-## :up: App Features
+## :up: APP Features
 
-# :construction_worker: How to run?
+## :construction_worker: How to run?
 ```bash
 git clone https://github.com/JardelDeveloper/app-polls-django.git
 ```
 
-# Build application
+## Build APP
 ```bash
 # Build Project
 $ django-admin startproject mysite
@@ -25,7 +25,7 @@ $ django-admin startproject mysite
 $ python manage.py startapp polls
 ```
 
-# Store and Migrate the Database
+## Store and Migrate the Database
 ```bash
 # Store model changes in a migration
 $ python manage.py makemigrations
@@ -33,7 +33,7 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-# :computer: Run Polls
+## :computer: Run Polls
 ```bash
 # Access the directory 
 $ cd mysite
@@ -43,7 +43,7 @@ $ python manage.py runserver
 ```
 Go to http://127.0.0.1:8000/polls/ 
 
-# Run Admin Polls
+## Run Admin Polls
 ```bash
 # Access the directory 
 $ cd mysite
@@ -54,7 +54,7 @@ $ python manage.py runserver
 ```
 Go to http://127.0.0.1:8000/admin/
 
-# 🤔 How to contribute?
+## 🤔 How to contribute?
 ```bash
 # Make a Fork this repository;
 # Create a branch with your feature: 
@@ -66,10 +66,10 @@ git push origin my-feature;
 ```
 After the merge of your pull request is done, you can delete a branch of yours.
 
-# :wrench: Issues
+## :wrench: Issues
 Feel free to **file a new issue** with a respective title and description on the the [Polls](https://github.com/JardelDeveloper/app-polls-django/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
 
-# :memo: License
+## :memo: License
 Released in 2020 :closed_book:
 
 This project is under the MIT license. See the [LICENSE](https://github.com/JardelDeveloper/app-polls-django/blob/master/LICENSE) for more details.
