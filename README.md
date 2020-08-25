@@ -1,80 +1,58 @@
-# Proffy (Web and Mobile) #
+# Pools #
 
-<h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
-</h1>
-
-> :computer: Made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
+> :computer: A public site that lets people view polls and vote in them. [Django Documentation](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 
 ## 🚀 Stacks
 This project was developed with the following technologies:
 
-- [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://reactnative.dev/) 
-- [TypeScript](https://www.typescriptlang.org/docs)
-- [Knex.js](http://knexjs.org/)
-- [Express.js](https://expressjs.com/pt-br/guide/routing.html)
-- [Expo](https://expo.io/)
+- [Python](https://www.python.org/doc/)
+- [Django](https://docs.djangoproject.com/en/2.2/)
+- [PyCharm](https://www.jetbrains.com/pt-br/pycharm/download/#section=windows) 
 - [SQLite](https://www.sqlite.org/docs.html)
 
-Tools & Utilities included:
-
-- [Insomnia Core (API)](https://support.insomnia.rest/)
-- [JSX](https://jsx.github.io/doc.html)
-- [Prettier](https://prettier.io/docs/en/index.html)
-- [ESLint](https://eslint.org/docs/user-guide/getting-started)
-- [Expo Google Fonts](https://github.com/expo/google-fonts)
-
 ## :up: App Features
-- Each teacher creates a class and makes his availability available;
-- Favorite classes (only mobile);
-- List classes for subject, day of week and time; 
- Rota para listar o total de conexões realizadas;
-- Create a new connection every time the student contacts the teacher via Whatsapp;
-- List all connections on the landing page.
 
 # :construction_worker: How to run?
 ```bash
-git clone https://github.com/JardelDeveloper/proffy-nlw-rocketseat.git
+git clone https://github.com/JardelDeveloper/app-polls-django.git
 ```
 
-# :incoming_envelope: Run API (Backend)
+# Build application
 ```bash
-# Access the directory
-$ cd proffy-nlw-rocketseat/server
-# Install Dependencies
-$ yarn install
-# Run Apṕlication
-$ yarn start
+# Build Project
+$ django-admin startproject mysite
+# Build App
+$ python manage.py startapp polls
 ```
-Once [Insomnia](https://insomnia.rest/download/core/?&ref=https%3A%2F%2Fwww.google.com%2F) is installed, you can make the API requests using the get and post method, and see the results instantly.
 
-Go to http://localhost:3333/ to see the API application's response.
+# Store and Migrate the Database
+```bash
+# Store model changes in a migration
+$ python manage.py makemigrations
+# Run migrate
+$ python manage.py migrate
+```
 
-# :computer: Run Web App (Frontend)
+# :computer: Run Polls
 ```bash
 # Access the directory 
-$ cd proffy-nlw-rocketseat/web
-# Install Dependencies
-$ yarn install
-# Run Aplication
-$ yarn start
+$ cd mysite
+# Install Dependencies (VENV)
+# Run Polls app
+$ python manage.py runserver
 ```
-Go to http://localhost:3000/ to see the web application's response.
+Go to http://127.0.0.1:8000/polls/ 
 
-# :iphone: Run Mobile App
+# Run Admin Polls
 ```bash
-# Install expo-cli globally
-$ yarn global add expo-cli 
-# Create the mobile project
-$ expo init mobile
-# Access the directory
-$ cd mobile
-# Run application
-$ expo start
+# Access the directory 
+$ cd mysite
+# Create Super User
+$ python manage.py createsuperuser
+# Run Admin app
+$ python manage.py runserver
 ```
-After accessing the QR Code, you will see the answer on your cell phone or it will run in the emulator.
+Go to http://127.0.0.1:8000/admin/
 
 # 🤔 How to contribute?
 ```bash
@@ -89,12 +67,12 @@ git push origin my-feature;
 After the merge of your pull request is done, you can delete a branch of yours.
 
 # :wrench: Issues
-Feel free to **file a new issue** with a respective title and description on the the [Proffy](https://github.com/JardelDeveloper/proffy-nlw-rocketseat/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
+Feel free to **file a new issue** with a respective title and description on the the [Polls](https://github.com/JardelDeveloper/app-polls-django/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
 
 # :memo: License
 Released in 2020 :closed_book:
 
-This project is under the MIT license. See the [LICENSE](LICENSE.md) for more details.
+This project is under the MIT license. See the [LICENSE](https://github.com/JardelDeveloper/app-polls-django/blob/master/LICENSE) for more details.
 
 Made with :green_heart: by Jardel Cunha.
 
