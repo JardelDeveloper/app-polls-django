@@ -1,6 +1,6 @@
 # Polls 
 
-> :computer: A public site that lets people view polls and vote in them. [Django Documentation](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+> 🖱️ A public site that lets people view polls and vote in them. [Django Documentation](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 
 ## 🚀 Stacks
 This project was developed with the following technologies:
@@ -17,7 +17,7 @@ This project was developed with the following technologies:
 git clone https://github.com/JardelDeveloper/app-polls-django.git
 ```
 
-## Build APP
+## ⚒ Build APP
 ```bash
 # Build Project
 $ django-admin startproject mysite
@@ -25,7 +25,7 @@ $ django-admin startproject mysite
 $ python manage.py startapp polls
 ```
 
-## Store and Migrate the Database
+## 🗃️ Store and Migrate the Database
 ```bash
 # Store model changes in a migration
 $ python manage.py makemigrations
@@ -43,7 +43,7 @@ $ python manage.py runserver
 ```
 Go to http://127.0.0.1:8000/polls/ 
 
-## Run Admin Polls
+## 🔐 Run Admin Polls
 ```bash
 # Access the directory 
 $ cd mysite
